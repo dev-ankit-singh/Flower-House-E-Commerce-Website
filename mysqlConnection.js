@@ -4,7 +4,7 @@ var con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "admin",
-  database:"flowerport"
+  database:"SERENO-living"
 });
 
 
@@ -12,6 +12,7 @@ var con = mysql.createConnection({
 
 
 // con.connect(function(err){
+
 //   if(err) throw  err;
 //   console.log("Connected!");
 //   con.query("CREATED DATABASE flowerport",function (err , result){
@@ -86,7 +87,7 @@ con.connect(function(err) {
 // con.query("select * from flowerport  order by  name",function(err,result){
 //   if(err) throw err;
 //   console.log(result)
-// });
+// }); bv 
 
 // con.query("alter table flowerport  add column contact int(12)",(err,result)=>{
 //   if(err) throw err;
@@ -99,8 +100,8 @@ con.query("update flowerport set contact=234567891 where name='william'",(err,re
   console.log('number of column updated:'+result.affectedRows );
 });
 
-}); 
-
+ 
+});
 
 
 

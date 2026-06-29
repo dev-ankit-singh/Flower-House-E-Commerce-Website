@@ -1,183 +1,140 @@
 <%-include('common/header')%>
 
+<section class="product-page">
+  <div class="product-page-inner">
 
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 home home-img">
-                <img src="assert/images/homeimg.webp" alt="">
-            </div>
-            <div class="col-md-6 home ">
-                <h1 class="">GEMA - Medium Planter Combo.. (pack of 2)</h1>
-                <span class="rate">
-                    <p>RS. 4,138.00 <del>RS. 4,598.00</del></p>
-                </span>
-                <p>DIMENSION: D53 X H53CM</p>
-                <button type="submit" class="D45 ">D45 X H45CM</button>
-                <button type="submit" class="D45">D53 X H53CM</button>
-                <p class="color py-5">COLOR: MILANO GREY</p>
-
-
-
-
-
-                <div class="product">
-                    <h2>Product Name</h2>
-                    <p id="price">Rs 4,138.00</p>
-                    <input type="number" id="quantity" value="1" min="1">
-                    <button id="addToCart">Add to Cart</button>
-                </div>
-
-
-                <div class="accordion my-3" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Description
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Light weight durable Round planters made from UV stabilised and non-fading colours.
-                                These contemporary wide mouth design planters can be used as external decorative
-                                elements for your inner pots or filled with light weight soil to grow you plants
-                                directly. <br>
-
-                                • UV Stabilised and Non Fading colours for outdoor or indoor use <br>
-
-                                • Unique polymer blend <br>
-
-                                • Lightweight <br>
-
-                                • Provision of drainage cap <br>
-
-                                • 100% Recyclable <br>
-
-                                (Plants shown in the pictures along with the planter are for representation purpose only
-                                and not part of sale)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-
-
-    <div class="container text-center  mt-5">
-        <div class="row">
-            <div class="col-md-6 degine-text">
-                <h3>Moulded with Love</h3>
-                <p>Our moulds are carefully finished by hand to give our products a unique surface finish. Great care is
-                    taken in polymer selection and during manufacturing process to ensure that each of our products is
-                    moulded with love to offer our customers an exceptional experience to beautify their space.</p>
-            </div>
-            <div class="col-md-6 degine">
-                <img src="assert/images/boy-1.jpeg" alt="">
-            </div>
-        </div>
+    <!-- LEFT: Images -->
+    <div class="product-gallery">
+      <div class="gallery-thumbs">
+        <img src="assert/images/homeimg.webp" alt="Thumb 1" class="gallery-thumb active" onclick="switchImg(this)">
+        <img src="assert/images/col2-1.png" alt="Thumb 2" class="gallery-thumb" onclick="switchImg(this)">
+        <img src="assert/images/combocol2-1.jpg" alt="Thumb 3" class="gallery-thumb" onclick="switchImg(this)">
+      </div>
+      <div class="gallery-main">
+        <img src="assert/images/homeimg.webp" alt="Zen Matte Bowl Planter" id="mainProductImg" class="gallery-main-img">
+        <div class="gallery-badge">ECO CERTIFIED</div>
+      </div>
     </div>
 
+    <!-- RIGHT: Info -->
+    <div class="product-info-panel">
+      <span class="page-eyebrow">Seasonal Bundle</span>
+      <h1 class="product-page-title">ZEN <em>Matte Bowl Planter</em></h1>
+      <p class="product-page-sub">Combo Pack of 2</p>
 
+      <div class="product-page-price">
+        <span class="ppp-new">₹4,138.00</span>
+        <span class="ppp-old">₹4,598.00</span>
+        <span class="ppp-save">Save ₹460</span>
+      </div>
 
-    <div class="container text-center my-5">
-        <div class="row">
-            <div class="col-md-6 degine">
-                <img src="assert/images/boy-2.jpeg" alt="">
-            </div>
-            <div class="col-md-6 degine-text">
-                <h3>Reduce-Reuse-Recycle</h3>
-                <p>Did you know our polymer selection is based on only 100% recyclable material? We at Sereno are
-                    working very hard to mitigate plastic pollution and building sustainable solutions that support our
-                    environment and future generations. This is only possible if we do it together. Great emphasis is
-                    laid down on using recycled polymer to cut down the use of fresh new polymer.</p>
-            </div>
+      <div class="pd-divider"></div>
+
+      <p class="pd-dim"><strong>Dimension:</strong> D53 × H53 CM</p>
+
+      <div class="pd-size-group">
+        <p class="pd-label">Select Size</p>
+        <div class="pd-sizes">
+          <button class="pd-size-btn" onclick="selectSize(this)">D45 × H45 CM</button>
+          <button class="pd-size-btn active" onclick="selectSize(this)">D53 × H53 CM</button>
         </div>
-    </div>
+      </div>
 
-
-
-    <div class="container text-center my-5">
-        <div class="row">
-            <div class="col-md-6 degine-text">
-                <h3>Sunshine or Rain</h3>
-                <p>Our careful polymer selection enables protection against weather conditions – this means our products
-                    do not crack in sun or rain. You will enjoy our low maintenance products for years to come without
-                    having to worry about chipping, peeling or colour fading.</p>
-            </div>
-            <div class="col-md-6 degine">
-                <img src="assert/images/boy-3.jpeg" alt="">
-
-            </div>
+      <div class="pd-color-group">
+        <p class="pd-label">Color: <strong id="colorName">Milano Grey</strong></p>
+        <div class="pd-colors">
+          <button class="pd-color-btn active" style="background:#7a7a7a" title="Milano Grey" onclick="selectColor(this,'Milano Grey')"></button>
+          <button class="pd-color-btn" style="background:#1a2e1a" title="Forest Green" onclick="selectColor(this,'Forest Green')"></button>
+          <button class="pd-color-btn" style="background:#c9a84c" title="Tuscan Gold" onclick="selectColor(this,'Tuscan Gold')"></button>
+          <button class="pd-color-btn" style="background:#f0ead8" title="Pearl Ivory" onclick="selectColor(this,'Pearl Ivory')"></button>
         </div>
+      </div>
+
+      <div class="pd-qty-group">
+        <p class="pd-label">Quantity</p>
+        <div class="pd-qty">
+          <button class="pd-qty-btn" onclick="changeQty(-1)">−</button>
+          <span id="qtyVal">1</span>
+          <button class="pd-qty-btn" onclick="changeQty(1)">+</button>
+        </div>
+        <p class="pd-total">Total: <strong id="pdTotal">₹4,138.00</strong></p>
+      </div>
+
+      <div class="pd-actions">
+        <button class="pd-add-cart" onclick="pdAddToCart()">Add to Cart</button>
+        <button class="pd-wishlist" aria-label="Wishlist">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+      </div>
+
+      <p class="pd-cart-msg" id="pdCartMsg"></p>
+
+      <!-- Accordion -->
+      <div class="pd-accordion">
+        <div class="pd-acc-item">
+          <button class="pd-acc-head" onclick="toggleAcc(this)">
+            Description
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="pd-acc-body">
+            <p>Lightweight, durable round planters crafted from UV-stabilised, non-fading polymer. The contemporary wide-mouth design works beautifully as a decorative outer pot or can be filled directly with lightweight soil to grow plants.</p>
+            <ul>
+              <li>UV Stabilised and Non Fading — suitable for indoors and outdoors</li>
+              <li>Premium polymer blend construction</li>
+              <li>Lightweight yet sturdy build</li>
+              <li>Drainage cap provision included</li>
+              <li>100% Recyclable material</li>
+            </ul>
+            <p class="pd-note">Plants shown in pictures are for representation only and not part of the sale.</p>
+          </div>
+        </div>
+        <div class="pd-acc-item">
+          <button class="pd-acc-head" onclick="toggleAcc(this)">
+            Shipping & Returns
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="pd-acc-body">
+            <p>Free shipping on orders above ₹5,000. Delivered within 5–7 business days. Easy 15-day return policy.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
+<!-- WHY VERDUXE -->
+<section class="pd-why-section">
+  <div class="pd-why-inner">
+    <div class="pd-why-item">
+      <div class="pd-why-img">
+        <img src="assert/images/boy-1.jpeg" alt="Crafted with Care">
+      </div>
+      <div class="pd-why-text">
+        <h3>Crafted with <em>Care</em></h3>
+        <p>Every Verduxe planter is finished with precision and attention to detail. From polymer selection to the final surface finish, great care is taken at every step of our manufacturing process.</p>
+      </div>
+    </div>
+    <div class="pd-why-item reverse">
+      <div class="pd-why-img">
+        <img src="assert/images/boy-2.jpeg" alt="Reduce Reuse Recycle">
+      </div>
+      <div class="pd-why-text">
+        <h3>Reduce · Reuse · <em>Recycle</em></h3>
+        <p>Our polymer selection is based on 100% recyclable material. At Verduxe, we are committed to reducing plastic waste and building sustainable solutions for future generations.</p>
+      </div>
+    </div>
+    <div class="pd-why-item">
+      <div class="pd-why-img">
+        <img src="assert/images/boy-3.jpeg" alt="Built for All Weather">
+      </div>
+      <div class="pd-why-text">
+        <h3>Built for <em>All Weather</em></h3>
+        <p>Our planters are engineered to withstand all weather conditions — from intense sun to heavy rain. No cracking, no peeling, no colour fading. Just lasting beauty, year after year.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<script src="assert/js/product.js"></script>
 
-
-    <!-- ########################################## GREEN BRACKET ########################################## -->
-
-   
-    <!-- ########################################## GREEN BRACKET ########################################## -->
-
-
-
-
-    <!-- ############################# js##################################### -->
-
-    <script>
-
-        const subtractButton = document.getElementById("subtract");
-        const addButton = document.getElementById("add");
-        const numberDisplay = document.getElementById("number");
-
-        let count = 0;
-
-        function updateDisplay() {
-            numberDisplay.textContent = count;
-        }
-
-        subtractButton.addEventListener("click", () => {
-            count -= 1;
-            updateDisplay();
-        });
-
-        addButton.addEventListener("click", () => {
-            count += 1;
-            updateDisplay();
-        });
-
-        updateDisplay();
-
-    </script>
-
-    <script>
-        const quantityInput = document.getElementById("quantity");
-        const priceDisplay = document.getElementById("price");
-        const addToCartButton = document.getElementById("addToCart");
-
-        const basePrice = 4138.121;
-
-        function updatePrice() {
-            const quantity = parseInt(quantityInput.value);
-            const totalPrice = basePrice * quantity;
-            priceDisplay.textContent = `Rs ${totalPrice.toFixed(3)}`;
-        }
-
-        quantityInput.addEventListener("input", updatePrice);
-        addToCartButton.addEventListener("click", () => {
-            const quantity = parseInt(quantityInput.value);
-            alert(`Added ${quantity} to cart!`);
-        });
-
-        updatePrice();
-
-    </script>
-    <!-- #################################### js ######################################## -->
-
-
-    <%-include('common/footer')%>
+<%-include('common/footer')%>

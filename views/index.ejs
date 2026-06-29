@@ -1,572 +1,435 @@
 <%-include('common/header')%>
-
-
-  <!-- #################################################CAROUSE START####################################################### -->
-  <div class="running-text">
-    <marquee behavior="smooth" direction="rtf">OUR PLEDGE : 100% REUSE ~ RECYCLE ~ REDUCE LIFESTYLE PLANTERS FOR INDOORS AND OUTDOORS All the flower pot manufacturers, flower pot sellers, flower pot dealers, flower pot suppliers, flower pot shop owners and other merchants can use this method to sell flower pots online.</marquee>
+<!-- ===== HERO CAROUSEL ===== -->
+<section class="hero" id="hero">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active" style="background:linear-gradient(135deg,#1a2a1a 0%,#2d4a2d 60%,#1a3a1a 100%)">
+      <div class="hero-content">
+        <p class="hero-eyebrow">New Collection 2025</p>
+        <h1 class="hero-title">Design Meets <em>Nature</em></h1>
+        <p class="hero-desc">Premium planters crafted for those who believe every corner deserves a touch of nature.</p>
+        <a href="#festive" class="btn-primary">Explore Collection</a>
+      </div>
+      <div class="hero-img-wrap">
+        <img src="assert/images/2_1.webp" alt="Verduxe Planter" class="hero-img">
+        <div class="hero-badge">ECO CERTIFIED</div>
+      </div>
+    </div>
+    <div class="hero-slide" style="background:linear-gradient(135deg,#2a2015 0%,#4a3820 60%,#2a1a0a 100%)">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Featured</p>
+        <h1 class="hero-title">Elevate <em>Every Space</em></h1>
+        <p class="hero-desc">All-weather ready. UV-stabilized. Designed to bring lasting elegance to your space.</p>
+        <a href="#arrivals" class="btn-primary">Shop Now</a>
+      </div>
+      <div class="hero-img-wrap">
+        <img src="assert/images/4_1_18f77e53-1026-4b8e-b3ca-7e983e7ea854.webp" alt="Verduxe Planter" class="hero-img">
+        <div class="hero-badge">BESTSELLER</div>
+      </div>
+    </div>
+    <div class="hero-slide" style="background:linear-gradient(135deg,#1a1a2a 0%,#2d2d4a 60%,#1a1a3a 100%)">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Glow Collection</p>
+        <h1 class="hero-title">Light &amp; <em>Life</em></h1>
+        <p class="hero-desc">LED-illuminated planters that transform your space after dark.</p>
+        <a href="#collections" class="btn-primary">Discover Glow</a>
+      </div>
+      <div class="hero-img-wrap">
+        <img src="assert/images/5_1.webp" alt="LED Planter" class="hero-img">
+        <div class="hero-badge">NEW</div>
+      </div>
+    </div>
   </div>
-  <section class="section">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active ">
-          <img src="assert/images/2_1.webp" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="assert/images/4_1_18f77e53-1026-4b8e-b3ca-7e983e7ea854.webp" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="assert/images/5_1.webp" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="assert/images/1_1_9bc7a1e9-9f2e-42ef-957e-5d18cc04baed.webp" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="assert/images/2_1.webp" class="d-block w-100" alt="..." />
+  <div class="hero-nav">
+    <button class="hero-prev" onclick="changeSlide(-1)">&#8592;</button>
+    <div class="hero-dots" id="heroDots">
+      <span class="dot active" onclick="goSlide(0)"></span>
+      <span class="dot" onclick="goSlide(1)"></span>
+      <span class="dot" onclick="goSlide(2)"></span>
+    </div>
+    <button class="hero-next" onclick="changeSlide(1)">&#8594;</button>
+  </div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<div class="stats-bar">
+  <div class="stat"><span class="stat-num">2500+</span><span>Satisfied Customers</span></div>
+  <div class="stat-divider"></div>
+  <div class="stat"><span class="stat-num">100%</span><span>Eco Crafted</span></div>
+  <div class="stat-divider"></div>
+  <div class="stat"><span class="stat-num">50+</span><span>Unique Designs</span></div>
+  <div class="stat-divider"></div>
+  <div class="stat"><span class="stat-num">10yr</span><span>Product Warranty</span></div>
+</div>
+
+<!-- ===== FESTIVE COMBO ===== -->
+<section class="section-wrap" id="festive">
+  <div class="section-header">
+    <span class="section-eyebrow">Seasonal Offer</span>
+    <h2 class="section-title">Seasonal Bundle Picks</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="products-grid" id="comboGrid">
+    <div class="product-card" data-hover-img="assert/images/combocol1-1.webp">
+      <div class="product-img-wrap">
+        <img src="assert/images/col1-1.webp" alt="Aria Large Planter" class="product-img">
+        <div class="product-tag">SAVE ₹660</div>
+        <div class="product-overlay">
+          <a href="gema" class="btn-overlay">View Product</a>
         </div>
       </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- svg use -->
-
-
-    <!-- #################################################CAROUSE  END####################################################### -->
-
-    <div class="festive mt-3 font-bold">FESTIVE COMBO OFFER</div>
-
-    <!-- ##############################################################CARD 1 START################################################# -->
-
-   
-  <div class="container py-5">
-      <div class="row">
-       
-
-       
-         <div class="col-sm-6 col-md-3 col-lg-3"> 
-          <div class="grid-list image-container  image-container1">
-            <a href="gema"><img id="image" src="assert/images/col1-1.webp" class="img-fluid" alt="..."></a>
-            <div class="card-content">
-              <p class="card-text">
-                <a href="gema.ejs"><strong>ROSA - LARGE PLANTER COMBO.. (PACK OF 2) </strong><br />
-                  From Rs. 5,938.00 <del> Rs. 6,598.00 </del></a>
-              </p>
-            </div>
-          </div>
-          
-        </div>
-
-        <div class="col-sm-6 col-md-3 col-lg-3">
-          <div class="grid-list image-container image-container1">
-            <a href="stella"><img id="image1" src="assert/images/col1-2.jpg" class="img-fluid" alt="..."></a>
-            <div class="card-content">
-              <p class="card-text">
-                <a href="#"><strong> STELLA - SMALL PLANTER COMBO.. (PACK OF 2) </strong><br />
-                  From Rs. 3,958.00 <del> Rs. 4,308.00 </del></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3">
-          <div class="grid-list image-container image-container1">
-            <a href="rosa"><img id="image2" src="assert/images/col1-3.webp" class="img-fluid" alt="..."></a>
-            <div class="card-content">
-              <p class="card-text">
-                <a href="#"><strong> ROSA - LARGE PLANTER COMBO.. (PACK OF 2) </strong><br />
-                  From Rs. 5,938.00 <del> Rs. 6,598.00 </del></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3">
-          <div class="grid-list image-container image-container1">
-            <a href="chaira"><img id="image3" src="assert/images/col1-4.webp" class="img-fluid" alt="..."></a>
-            <div class="card-content">
-              <p class="card-text">
-                <a href="#"><strong>
-                    CHIARA - MEDIUM LED PLANTER COMBO.. (PACK OF 2) </strong><br />
-                  From Rs. 26,538.00 <del> Rs. 35,458.00 </del></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      
-      </div>
-    </div>
-    
-
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list images-container  image-container1">
-            <img id="images" src="assert/images/col2-1.png" class="img-fluid" alt="...">
-            <div class="card-content">
-              <p class="card-text">
-                <a href="#"><strong> GEMA - MEDIUM PLANTER COMBO.. (PACK OF 2) </strong><br />
-                  From Rs. 4,138.00 <del> Rs. 4,598.00 </del></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list images-container image-container1">
-            <img id="images1" src="assert/images/col2-2.png" class="img-fluid" alt="...">
-            <div class="card-content">
-              <p class="card-text">
-                <a href="#"><strong> STELLA - SMALL PLANTER COMBO.. (PACK OF 2) </strong><br />
-                  From Rs. 3,958.00 <del> Rs. 4,308.00 </del></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list images-container image-container1">
-            <img id="images2" src="assert/images/col2-3.png" class="img-fluid" alt="...">
-            <div class="card-content">
-              <p class="card-text">
-                <a href="#"><strong> ROSA - LARGE PLANTER COMBO.. (PACK OF 2) </strong><br />
-                  From Rs. 5,938.00 <del> Rs. 6,598.00 </del></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list images-container image-container1">
-            <img id="images3" src="assert/images/col1-4.webp" class="img-fluid" alt="...">
-            <div class="card-content">
-              <p class="card-text">
-                <a href="#"><strong>
-                    CHIARA - MEDIUM LED PLANTER COMBO.. (PACK OF 2) </strong><br />
-                  From Rs. 26,538.00 <del> Rs. 35,458.00 </del></a>
-              </p>
-            </div>
-          </div>
+      <div class="product-info">
+        <p class="product-name">ARIA — Large Planter Combo</p>
+        <p class="product-sub">Pack of 2</p>
+        <div class="product-price">
+          <span class="price-new">₹5,938</span>
+          <span class="price-old">₹6,598</span>
         </div>
       </div>
     </div>
-
-
-
-    
-
-    <!--  ##############################################################CARD 2 END--#################################################-->
-
-
-      <div class="container">
-        <div class="row">
-          <% if(productdata.length>0) { %>
-            <% for(var i=0; i<productdata.length; i++) { %>
-          <div class="col-4">
-            <div class="card">
-              <div class="card-img">
-            <img src="/assert/images/<%= productdata[i].fileupload %>">   
-              </div>
-              <div class="card-body">
-                <a href="gema.ejs"><strong> <%= productdata[i]. productname %></strong><br />
-                  Rs. <%= productdata[i].price %></a>
-               
-               
-              </div>
-            </div>
-          </div>
-          <% } %>
-          <% } else { %>
-            No Record Found 
-          <% } %>
+    <div class="product-card" data-hover-img="assert/images/combocol1-2.webp">
+      <div class="product-img-wrap">
+        <img src="assert/images/col1-2.jpg" alt="Nova Planter" class="product-img">
+        <div class="product-tag">SAVE ₹350</div>
+        <div class="product-overlay">
+          <a href="stella" class="btn-overlay">View Product</a>
         </div>
       </div>
-
-
- <!-- <--#################################################view all start ###################################################3--> -->
-
-
-    <div class="veiw mt-4">
-      <span><button type="button" class="btn"><a href="view">View all</a></button></span>
-    </div>
-
-
-    <!-- #################################################view all end ###################################################3-->
-    <div class="newarrivals pt-5">NEW ARRIVALS</div>
-
-
-
-
-    <!-- ######################################################## ADD CARD1 START  #################################################### -->
-
-
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list">
-            <img src="assert/images/addtocard1.jpg" class="img-fluid" alt="...">
-            <div class="card-content add-cart">
-              <p class="card-texts"><a href="#">STELLA - MEDIUM PLANTER </a></p>
-              <p class="rs"><a href="#">Rs. 5,432.00</a></p>
-              <a href="#" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list">
-            <img src="assert/images/addtocard2.webp" class="img-fluid" alt="...">
-            <div class="card-content add-cart">
-              <p class="card-texts"><a href="#">STELLA - MEDIUM PLANTER </a></p>
-              <p class="rs"><a href="#">Rs. 5,432.00</a></p>
-              <a href="#" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list">
-            <img src="assert/images/addtocard3.webp" class="img-fluid" alt="...">
-            <div class="card-content add-cart">
-              <p class="card-texts"><a href="#">STELLA - MEDIUM PLANTER </a></p>
-              <p class="rs"><a href="#">Rs. 5,432.00</a></p>
-              <a href="#" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list">
-            <img src="assert/images/addtocard4.webp" class="img-fluid" alt="...">
-            <div class="card-content add-cart">
-              <p class="card-texts"><a href="#">STELLA - MEDIUM PLANTER </a></p>
-              <p class="rs"><a href="#">Rs. 5,432.00</a></p>
-              <a href="#" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
+      <div class="product-info">
+        <p class="product-name">NOVA — Compact Planter Combo</p>
+        <p class="product-sub">Pack of 2</p>
+        <div class="product-price">
+          <span class="price-new">₹3,958</span>
+          <span class="price-old">₹4,308</span>
         </div>
       </div>
     </div>
-
-
-    <!-- ########################################################  ADD CARD1 END  #################################################### -->
-
-
-    <!-- SHOP BY CATEGORY start -->
-
-    <div class="shop-by pt-5">SHOP BY CATEGORY</div>
-    <!-- SHOP BY CATEGORY end -->
-
-    <!-- buttons ground start -->
-    <div class="container text-center mt-5" border-radius="none">
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn btn-outline-danger">Small Plant</button>
+    <div class="product-card" data-hover-img="assert/images/combocol1-3.webp">
+      <div class="product-img-wrap">
+        <img src="assert/images/col1-3.webp" alt="Aria Planter" class="product-img">
+        <div class="product-tag">BESTSELLER</div>
+        <div class="product-overlay">
+          <a href="rosa" class="btn-overlay">View Product</a>
         </div>
-        <div class="col">
-          <button type="button" class="btn btn-outline-danger">Medium Plant</button>
-        </div>
-        <div class="col">
-          <button type="button" class="btn btn-outline-danger">Larg Plant</button>
-        </div>
-        <div class="col">
-          <button type="button" class="btn btn-outline-danger">Extra Plant</button>
+      </div>
+      <div class="product-info">
+        <p class="product-name">ARIA — Large Planter Combo</p>
+        <p class="product-sub">Pack of 2</p>
+        <div class="product-price">
+          <span class="price-new">₹5,938</span>
+          <span class="price-old">₹6,598</span>
         </div>
       </div>
     </div>
-    <!-- buttons ground end -->
-
-    <!-- collectio  start -->
-    <div class="collections pt-5">COLLECTIONS</div>
-    <!-- collectio  enc -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="assert/images/PIATTO_2.webp" alt="Image 1" class="image">
-          <p class="text">Plants</p>
+    <div class="product-card" data-hover-img="assert/images/comnocol1-4.webp">
+      <div class="product-img-wrap">
+        <img src="assert/images/col1-4.webp" alt="Glow LED Planter" class="product-img">
+        <div class="product-tag sale">SAVE ₹8,920</div>
+        <div class="product-overlay">
+          <a href="chaira" class="btn-overlay">View Product</a>
         </div>
-        <div class="col-md-3">
-          <img src="assert/images/plants2.webp" alt="Image 2" class="image">
-          <p class="text">LED Plants</p>
-        </div>
-        <div class="col-md-3">
-          <img src="assert/images/Furniture.webp" alt="Image 3" class="image">
-          <p class="text">Furniture</p>
-        </div>
-        <div class="col-md-3">
-          <img src="assert/images/lamp.webp" alt="Image 4" class="image">
-          <p class="text">Lamps</p>
+      </div>
+      <div class="product-info">
+        <p class="product-name">GLŌW — Medium LED Planter</p>
+        <p class="product-sub">Pack of 2</p>
+        <div class="product-price">
+          <span class="price-new">₹26,538</span>
+          <span class="price-old">₹35,458</span>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container text-center my-3">
-      <div class="row">
-        <div class="col-md-6 degine">
-          <img src="assert/images/through.webp" alt="">
+  <!-- Row 2 Combos -->
+  <div class="products-grid" style="margin-top:2rem" id="comboGrid2">
+    <div class="product-card" data-hover-img="assert/images/combocol2-1.jpg">
+      <div class="product-img-wrap">
+        <img src="assert/images/col2-1.png" alt="Zen Planter" class="product-img">
+        <div class="product-overlay"><a href="#" class="btn-overlay">View Product</a></div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">ZEN — Matte Bowl Combo</p>
+        <p class="product-sub">Pack of 2</p>
+        <div class="product-price"><span class="price-new">₹4,138</span><span class="price-old">₹4,598</span></div>
+      </div>
+    </div>
+    <div class="product-card" data-hover-img="assert/images/combocol2-2.jpg">
+      <div class="product-img-wrap">
+        <img src="assert/images/col2-2.png" alt="Nova Planter" class="product-img">
+        <div class="product-overlay"><a href="#" class="btn-overlay">View Product</a></div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">NOVA — Compact Planter Combo</p>
+        <p class="product-sub">Pack of 2</p>
+        <div class="product-price"><span class="price-new">₹3,958</span><span class="price-old">₹4,308</span></div>
+      </div>
+    </div>
+    <div class="product-card" data-hover-img="assert/images/combocol2-3.jpg">
+      <div class="product-img-wrap">
+        <img src="assert/images/col2-3.png" alt="Aria Planter" class="product-img">
+        <div class="product-overlay"><a href="#" class="btn-overlay">View Product</a></div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">ARIA — Grand Planter Combo</p>
+        <p class="product-sub">Pack of 2</p>
+        <div class="product-price"><span class="price-new">₹5,938</span><span class="price-old">₹6,598</span></div>
+      </div>
+    </div>
+    <div class="product-card" data-hover-img="assert/images/comnocol1-4.webp">
+      <div class="product-img-wrap">
+        <img src="assert/images/col1-4.webp" alt="Glow LED" class="product-img">
+        <div class="product-overlay"><a href="#" class="btn-overlay">View Product</a></div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">GLŌW — Medium LED Planter</p>
+        <p class="product-sub">Pack of 2</p>
+        <div class="product-price"><span class="price-new">₹26,538</span><span class="price-old">₹35,458</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="view-all-wrap">
+    <a href="view" class="btn-outline">View All Products</a>
+  </div>
+</section>
+
+<!-- ===== NEW ARRIVALS ===== -->
+<section class="section-wrap dark-section" id="arrivals">
+  <div class="section-header">
+    <span class="section-eyebrow light">Just Landed</span>
+    <h2 class="section-title light">Fresh to Our Floor</h2>
+    <div class="section-line gold"></div>
+  </div>
+  <div class="products-grid">
+    <div class="product-card dark-card">
+      <div class="product-img-wrap">
+        <img src="assert/images/addtocard1.jpg" alt="Luxe Tall Planter" class="product-img">
+        <div class="product-tag gold-tag">NEW</div>
+        <div class="product-overlay">
+          <button class="btn-overlay" onclick="addToCart('STELLA - MEDIUM PLANTER', 5432)">Add to Cart</button>
         </div>
-        <div class="col-md-6 degine-text">
-          <h3>
-            THROUGH ITS PRODUCT LINE, SERENO OFFERS MYRIAD WAYS OF EXPERIENCING
-            NATURE & LIGHT
-          </h3>
-          <p>
-            Ways, which ask us to stop for a bit, relax, sit, breathe & enjoythe
-            moment. Sereno products are weather resistant, UV stabilized and
-            non-fading. This means they will be a part of your design space for
-            years to come.
-          </p>
-          <a href="about_us"> <button class="btn">About me</button></a>
+      </div>
+      <div class="product-info">
+        <p class="product-name">LUXE — Tall Floor Planter</p>
+        <div class="product-price"><span class="price-new">₹5,432</span></div>
+      </div>
+    </div>
+    <div class="product-card dark-card">
+      <div class="product-img-wrap">
+        <img src="assert/images/addtocard2.webp" alt="Arc Curved Planter" class="product-img">
+        <div class="product-tag gold-tag">NEW</div>
+        <div class="product-overlay">
+          <button class="btn-overlay" onclick="addToCart('STELLA - MEDIUM PLANTER', 5432)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">ARC — Curved Planter</p>
+        <div class="product-price"><span class="price-new">₹5,432</span></div>
+      </div>
+    </div>
+    <div class="product-card dark-card">
+      <div class="product-img-wrap">
+        <img src="assert/images/addtocard3.webp" alt="Dune Sand Planter" class="product-img">
+        <div class="product-tag gold-tag">NEW</div>
+        <div class="product-overlay">
+          <button class="btn-overlay" onclick="addToCart('STELLA - MEDIUM PLANTER', 5432)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">DUNE — Sand Series Planter</p>
+        <div class="product-price"><span class="price-new">₹5,432</span></div>
+      </div>
+    </div>
+    <div class="product-card dark-card">
+      <div class="product-img-wrap">
+        <img src="assert/images/addtocard4.webp" alt="Kova Slim Tower" class="product-img">
+        <div class="product-tag gold-tag">NEW</div>
+        <div class="product-overlay">
+          <button class="btn-overlay" onclick="addToCart('STELLA - MEDIUM PLANTER', 5432)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">KOVA — Slim Tower Planter</p>
+        <div class="product-price"><span class="price-new">₹5,432</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SHOP BY CATEGORY ===== -->
+<section class="section-wrap" id="categories">
+  <div class="section-header">
+    <span class="section-eyebrow">Find Your Style</span>
+    <h2 class="section-title">Browse by Style</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="cat-filters">
+    <button class="cat-btn active" data-filter="all">All</button>
+    <button class="cat-btn" data-filter="small">Compact</button>
+    <button class="cat-btn" data-filter="medium">Standard Planters</button>
+    <button class="cat-btn" data-filter="large">Grand Planters</button>
+    <button class="cat-btn" data-filter="led">Glow Series</button>
+  </div>
+</section>
+
+<!-- ===== COLLECTIONS GRID ===== -->
+<section class="section-wrap bg-cream" id="collections">
+  <div class="section-header">
+    <span class="section-eyebrow">Curated For You</span>
+    <h2 class="section-title">Our Signature Lines</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="collections-grid">
+    <div class="collection-item">
+      <div class="collection-img-wrap">
+        <img src="assert/images/PIATTO_2.webp" alt="Garden Planters Collection">
+        <div class="collection-overlay">
+          <span class="collection-name">Garden Planters</span>
+          <a href="#" class="btn-collection">Shop Now</a>
         </div>
       </div>
     </div>
-
-    <!-- BEST SELLERS starts -->
-    <div class="bestseller pt-5">BEST SELLERS</div>
-    <!-- BEST SELLERS end -->
-
-    <!-- ###############################################  start card5  #######################################################3 -->
-
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list">
-            <img src="assert/images/addtocard1.jpg" class="img-fluid" alt="...">
-            <div class="card-content add-cart">
-              <p class="card-texts"><a href="#">STELLA - MEDIUM PLANTER </a></p>
-              <p class="rs"><a href="#">Rs. 5,432.00</a></p>
-              <a href="#" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list">
-            <img src="assert/images/addtocard2.webp" class="img-fluid" alt="...">
-            <div class="card-content add-cart">
-              <p class="card-texts"><a href="#">STELLA - MEDIUM PLANTER </a></p>
-              <p class="rs"><a href="#">Rs. 5,432.00</a></p>
-              <a href="#" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list">
-            <img src="assert/images/addtocard3.webp" class="img-fluid" alt="...">
-            <div class="card-content add-cart">
-              <p class="card-texts"><a href="#">STELLA - MEDIUM PLANTER </a></p>
-              <p class="rs"><a href="#">Rs. 5,432.00</a></p>
-              <a href="#" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="grid-list">
-            <img src="assert/images/addtocard4.webp" class="img-fluid" alt="...">
-            <div class="card-content add-cart">
-              <p class="card-texts"><a href="#">STELLA - MEDIUM PLANTER </a></p>
-              <p class="rs"><a href="#">Rs. 5,432.00</a></p>
-              <a href="#" class="btn btn-success">Add to Cart</a>
-            </div>
-          </div>
+    <div class="collection-item">
+      <div class="collection-img-wrap">
+        <img src="assert/images/plants2.webp" alt="Glow Planters">
+        <div class="collection-overlay">
+          <span class="collection-name">Glow Planters</span>
+          <a href="#" class="btn-collection">Shop Now</a>
         </div>
       </div>
     </div>
-
-
-    <!-- ###############################################  End card5  #######################################################3 -->
-
-    <!-- PRODUCT FEATURES start -->
-
-    <div class="product-features">
-      <hr />
-      FEATURES
-    </div>
-
-
-    <div class="container features_logo ">
-      <div class="row brand-logo ">
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-1.avif" class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-2.avif" class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-3.avif" class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-4.avif" class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-5.avif" class="img-fluid" alt="...">
-          </div>
+    <div class="collection-item">
+      <div class="collection-img-wrap">
+        <img src="assert/images/Furniture.webp" alt="Outdoor Living">
+        <div class="collection-overlay">
+          <span class="collection-name">Outdoor Living</span>
+          <a href="#" class="btn-collection">Shop Now</a>
         </div>
       </div>
     </div>
-
-
-
-    <div class="container">
-      <div class="row brand-logo">
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-6.avif" class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-7.avif" class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-8.avif" class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-9.avif" class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4">
-          <div class="grid-item">
-            <img src="assert/images/light-10.avif" class="img-fluid" alt="...">
-          </div>
+    <div class="collection-item">
+      <div class="collection-img-wrap">
+        <img src="assert/images/lamp.webp" alt="Ambient Lighting">
+        <div class="collection-overlay">
+          <span class="collection-name">Ambient Lighting</span>
+          <a href="#" class="btn-collection">Shop Now</a>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ===== BRAND STORY ===== -->
+<section class="brand-story">
+  <div class="brand-story-inner">
+    <div class="brand-story-img">
+      <img src="assert/images/through.webp" alt="Verduxe Story">
+      <div class="story-accent"></div>
     </div>
-    <!-- PRODUCT FEATURES end --->
+    <div class="brand-story-text">
+      <span class="section-eyebrow">Our Philosophy</span>
+      <h2 class="story-heading">Through its product line, Verduxe Plants brings you closer to experiencing <em>Nature &amp; Design</em></h2>
+      <p>Through every product, Verduxe Plants brings you closer to nature — where thoughtful design meets timeless beauty. We create spaces that breathe, inspire, and feel like home.</p>
+      <a href="about_us" class="btn-primary dark">Our Story</a>
+    </div>
+  </div>
+</section>
 
+<!-- ===== BEST SELLERS ===== -->
+<section class="section-wrap" id="bestsellers">
+  <div class="section-header">
+    <span class="section-eyebrow">Top Picks</span>
+    <h2 class="section-title">Customer Favourites</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img src="assert/images/addtocard1.jpg" alt="Luxe Tall Planter" class="product-img">
+        <div class="product-tag">★ TOP PICK</div>
+        <div class="product-overlay">
+          <button class="btn-overlay" onclick="addToCart('STELLA - MEDIUM PLANTER', 5432)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">LUXE — Tall Floor Planter</p>
+        <div class="product-price"><span class="price-new">₹5,432</span></div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img src="assert/images/addtocard2.webp" alt="Arc Curved Planter" class="product-img">
+        <div class="product-tag">★ TOP PICK</div>
+        <div class="product-overlay">
+          <button class="btn-overlay" onclick="addToCart('STELLA - MEDIUM PLANTER', 5432)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">ARC — Curved Planter</p>
+        <div class="product-price"><span class="price-new">₹5,432</span></div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img src="assert/images/addtocard3.webp" alt="Dune Sand Planter" class="product-img">
+        <div class="product-tag">★ TOP PICK</div>
+        <div class="product-overlay">
+          <button class="btn-overlay" onclick="addToCart('STELLA - MEDIUM PLANTER', 5432)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">DUNE — Sand Series Planter</p>
+        <div class="product-price"><span class="price-new">₹5,432</span></div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img src="assert/images/addtocard4.webp" alt="Kova Slim Tower" class="product-img">
+        <div class="product-tag">★ TOP PICK</div>
+        <div class="product-overlay">
+          <button class="btn-overlay" onclick="addToCart('STELLA - MEDIUM PLANTER', 5432)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-name">KOVA — Slim Tower Planter</p>
+        <div class="product-price"><span class="price-new">₹5,432</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  </section>
+<!-- ===== FEATURES ===== -->
+<section class="features-section">
+  <div class="section-header">
+    <span class="section-eyebrow light">Why Verduxe</span>
+    <h2 class="section-title light">Built for Nature Lovers</h2>
+    <div class="section-line gold"></div>
+  </div>
+  <div class="features-grid">
+    <div class="feature-item"><img src="assert/images/light-1.avif" alt="Feature"><p>UV Resistant</p></div>
+    <div class="feature-item"><img src="assert/images/light-2.avif" alt="Feature"><p>All Weather</p></div>
+    <div class="feature-item"><img src="assert/images/light-3.avif" alt="Feature"><p>Eco Crafted</p></div>
+    <div class="feature-item"><img src="assert/images/light-4.avif" alt="Feature"><p>Built to Last</p></div>
+    <div class="feature-item"><img src="assert/images/light-5.avif" alt="Feature"><p>Non Fading</p></div>
+    <div class="feature-item"><img src="assert/images/light-6.avif" alt="Feature"><p>Recyclable</p></div>
+    <div class="feature-item"><img src="assert/images/light-7.avif" alt="Feature"><p>Lightweight Build</p></div>
+    <div class="feature-item"><img src="assert/images/light-8.avif" alt="Feature"><p>Low Maintenance</p></div>
+    <div class="feature-item"><img src="assert/images/light-9.avif" alt="Feature"><p>Premium Grade</p></div>
+    <div class="feature-item"><img src="assert/images/light-10.avif" alt="Feature"><p>Designer Made</p></div>
+  </div>
+</section>
 
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <span class="section-eyebrow">Stay Inspired</span>
+    <h2>Join Us for Offers &amp; <em>Green Inspiration</em></h2>
+    <p>Join our community of plant lovers. Get early access to new arrivals, seasonal bundles, and living space ideas.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" id="newsletterEmail">
+      <button onclick="subscribeNewsletter()">Subscribe Now</button>
+    </div>
+    <p class="newsletter-note" id="newsletterMsg"></p>
+  </div>
+</section>
 
-
-
-
-
-
-
-
-
-
-  <!-- #########################################################  start image 1 row js1############################@@@@@@####################### -->
-
-  <script>
-    const image = document.getElementById('image');
-
-    image.addEventListener('mouseenter', () => {
-      image.src = 'assert/images/combocol1-1.webp';
-    });
-
-    image.addEventListener('mouseleave', () => {
-      image.src = 'assert/images/col1-1.webp';
-    });
-  </script>
-
-  <script>
-    const image1 = document.getElementById('image1');
-
-    image1.addEventListener('mouseenter', () => {
-      image1.src = 'assert/images/combocol1-2.webp';
-    });
-
-    image1.addEventListener('mouseleave', () => {
-      image1.src = 'assert/images/col1-2.jpg';
-    });
-  </script>
-
-  <script>
-    const image2 = document.getElementById('image2');
-
-    image2.addEventListener('mouseenter', () => {
-      image2.src = 'assert/images/combocol1-3.webp';
-    });
-
-    image2.addEventListener('mouseleave', () => {
-      image2.src = 'assert/images/col1-3.webp';
-    });
-
-  </script>
-
-
-
-  <!-- ######################################################## end  image 1 row   js1######################################################### -->
-
-
-
-
-  <!-- ######################################################### start images row2 js2############################@@@@@@####################### -->
-
-
-  <script>
-    const images = document.getElementById('images');
-
-    images.addEventListener('mouseenter', () => {
-      images.src = 'assert/images/combocol2-1.jpg';
-    });
-
-    images.addEventListener('mouseleave', () => {
-      images.src = 'assert/images/col2-1.png';
-    });
-
-  </script>
-
-
-  <script>
-
-    const images1 = document.getElementById('images1');
-
-    images1.addEventListener('mouseenter', () => {
-      images1.src = 'assert/images/combocol2-2.jpg';
-    });
-
-    images1.addEventListener('mouseleave', () => {
-      images1.src = 'assert/images/col2-2.png';
-    });
-
-  </script>
-
-  <script>
-
-    const images2 = document.getElementById('images2');
-
-    images2.addEventListener('mouseenter', () => {
-      images2.src = 'assert/images/combocol2-3.jpg';
-    });
-
-    images2.addEventListener('mouseleave', () => {
-      images2.src = 'assert/images/col2-3.png';
-    });
-
-  </script>
-
-  <script>
-
-    const images3 = document.getElementById('image3');
-
-    images3.addEventListener('mouseenter', () => {
-      images3.src = 'assert/images/comnocol1-4.webp';
-    });
-
-    images3.addEventListener('mouseleave', () => {
-      images3.src = "assert/images/col1-4.webp";
-    });
-
-  </script>
-
-
-
-  <!-- ######################################################## endimages row2 js2#########################################################3 -->
-
-  <%-include ('common/footer')%>
+<%-include ('common/footer')%>

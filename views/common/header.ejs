@@ -1,69 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assert/images/f.png" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
-        <!-- Add bootstrap -->
-     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-     <!-- <link rel="stylesheet" href="../assert/css/style.css"> -->
-     <link rel="stylesheet" href="assert/css/style.css">
-
-     <!-- fontawsom cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title> Planters - Flower Pots - Garden Furniture - High Quality - Sustainable</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERDUXE — Premium Living Planters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assert/css/style2.css">
 </head>
-<body >
+<body>
 
-   <header>
-   <nav class="navbar navbar-expand-lg bg-success ">
-    <div class="container-fluid m-auto logo">
-      <a class="navbar-brand " href="#"><img src="assert/images/f.png" alt="" width="50vw"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse  contain" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-2 ms-5  home-text">
-          <li class="nav-item">
-            <a class="nav-link "aria-current="page" href="/">HOME </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"href="about_us">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-disabled="true" href="contact_us">CONTACT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-disabled="true" href="login">LOGIN</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-dark  search_btn mt-2" type="submit" >Search</button>
-        </form>
-      </div>
-    </div>
-  </nav> 
-</header>  
-  
+<!-- ===== ANNOUNCEMENT BAR ===== -->
+<div class="announce-bar">
+  <div class="marquee-wrap">
+    <span>OUR PROMISE: 100% ECO · CRAFTED · DELIVERED &nbsp;&nbsp;✦&nbsp;&nbsp; PREMIUM PLANTERS FOR EVERY LIVING SPACE &nbsp;&nbsp;✦&nbsp;&nbsp; FREE SHIPPING ON ORDERS ABOVE ₹5,000 &nbsp;&nbsp;✦&nbsp;&nbsp; OUR PROMISE: 100% ECO · CRAFTED · DELIVERED &nbsp;&nbsp;✦&nbsp;&nbsp; PREMIUM PLANTERS FOR EVERY LIVING SPACE &nbsp;&nbsp;✦&nbsp;&nbsp; FREE SHIPPING ON ORDERS ABOVE ₹5,000 &nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-  
-
-</body>
-<script src="../../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script> 
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- <script>
-  AOS.init();
-</script>
-</html>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <a href="/" class="nav-logo">
+    <span class="logo-serif">VERDUXE</span>
+    <span class="logo-sub">PLANTS</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="/">HOME</a>
+    <a href="about_us">ABOUT US</a>
+    <a href="collections">COLLECTIONS</a>
+    <a href="contact_us">CONTACT US</a>
+    <a href="login" class="nav-cta">LOGIN</a>
+  </div>
+  <div class="nav-search">
+    <input type="search" placeholder="Search planters…" id="searchInput">
+    <button class="search-icon" aria-label="Search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+  </div>
+</nav>

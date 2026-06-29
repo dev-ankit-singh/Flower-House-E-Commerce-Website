@@ -1,14 +1,16 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://AnkitSingh:Ankitsingh.se71@cluster0.2qz7y6x.mongodb.net/project",
-
+mongoose.connect("mongodb://localhost:27017/project",
+   
 {
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
 
-.then(()=>console.log("successfully registration...."))
+.then(()=>console.log("database connect"))
 .catch((err)=>console.log(err));
 
 const mongoCon=mongoose.connect;
 
 module.exports=mongoCon
+
+

@@ -30,12 +30,12 @@
                 <tbody>
                   <tr>
                     <td><%= i %></td>
-                    <td><%= productdata[i]. productname %></td>
+                    <td><%= productdata[i].productname %></td>
                     <td><%= productdata[i].productdescription %></td>
                     <td><%= productdata[i].price %></td>
                     <td><%= productdata[i].fileupload %></td>
-                    <td><a href='/edit/<%= productdata[i]._id %>'>Edit</a></td>
-                    <td><a href='/delete2/<%= productdata[i]._id %>'>Delete</a></td>
+                    <td><a href='/edit/<%=productdata[i]._id %>'>Edit</a></td>
+                    <td><a href='/delete2/<%=productdata[i]._id %>'>Delete</a></td>
                   </tr>
                 </tbody>
                 <% } %>

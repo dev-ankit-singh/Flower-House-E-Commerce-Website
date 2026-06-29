@@ -4,8 +4,8 @@
 const mongoose = require('mongoose');
 
 mongoose.connect
-("mongodb+srv://AnkitSingh:Ankitsingh.se71@cluster0.2qz7y6x.mongodb.net/Createdata?retryWrites=true&w=majority&appName=AtlasApp",
-
+("mongodb://localhost:27017/Createdata",
+    
 // mongoose.connect("mongodb://0.0.0.0:27017/",
 
 {

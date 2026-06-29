@@ -1,0 +1,179 @@
+<%-include('common/header')%>
+
+
+<!-- HERO -->
+<section class="view-hero">
+  <div class="view-hero-text">
+    <span class="page-eyebrow">Complete Range</span>
+    <h1 class="view-hero-title">All <em>Products</em></h1>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<div class="view-filters-bar">
+  <div class="view-filters">
+    <button class="vf-btn active" data-cat="all">All</button>
+    <button class="vf-btn" data-cat="small">Small</button>
+    <button class="vf-btn" data-cat="medium">Medium</button>
+    <button class="vf-btn" data-cat="large">Large</button>
+    <button class="vf-btn" data-cat="led">LED</button>
+  </div>
+  <div class="view-sort">
+    <select id="sortSelect">
+      <option value="default">Sort: Featured</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+    </select>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="view-products-section">
+  <div class="view-grid" id="viewGrid">
+
+    <div class="vp-card" data-cat="medium">
+      <a href="gema" class="vp-img-wrap">
+        <img src="assert/images/col2-1.png" alt="Gema">
+        <div class="vp-tag">MEDIUM</div>
+        <div class="vp-overlay"><span>View Product</span></div>
+      </a>
+      <div class="vp-info">
+        <p class="vp-name">GEMA — Medium Planter Combo</p>
+        <p class="vp-sub">Pack of 2</p>
+        <div class="vp-price"><span class="vp-new">₹4,138</span><span class="vp-old">₹4,598</span></div>
+        <button class="vp-cart" onclick="addToCart('GEMA')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="vp-card" data-cat="small">
+      <a href="stella" class="vp-img-wrap">
+        <img src="assert/images/col2-2.png" alt="Stella">
+        <div class="vp-tag">SMALL</div>
+        <div class="vp-overlay"><span>View Product</span></div>
+      </a>
+      <div class="vp-info">
+        <p class="vp-name">STELLA — Small Planter Combo</p>
+        <p class="vp-sub">Pack of 2</p>
+        <div class="vp-price"><span class="vp-new">₹3,958</span><span class="vp-old">₹4,308</span></div>
+        <button class="vp-cart" onclick="addToCart('STELLA')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="vp-card" data-cat="large">
+      <a href="rosa" class="vp-img-wrap">
+        <img src="assert/images/col2-3.png" alt="Rosa">
+        <div class="vp-tag">LARGE</div>
+        <div class="vp-overlay"><span>View Product</span></div>
+      </a>
+      <div class="vp-info">
+        <p class="vp-name">ROSA — Large Planter Combo</p>
+        <p class="vp-sub">Pack of 2</p>
+        <div class="vp-price"><span class="vp-new">₹5,938</span><span class="vp-old">₹6,598</span></div>
+        <button class="vp-cart" onclick="addToCart('ROSA')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="vp-card" data-cat="led">
+      <a href="chaira" class="vp-img-wrap">
+        <img src="assert/images/col1-4.webp" alt="Chiara LED">
+        <div class="vp-tag gold-tag">LED</div>
+        <div class="vp-overlay"><span>View Product</span></div>
+      </a>
+      <div class="vp-info">
+        <p class="vp-name">CHIARA — Medium LED Planter</p>
+        <p class="vp-sub">Pack of 2</p>
+        <div class="vp-price"><span class="vp-new">₹26,538</span><span class="vp-old">₹35,458</span></div>
+        <button class="vp-cart" onclick="addToCart('CHIARA LED')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="vp-card" data-cat="large">
+      <div class="vp-img-wrap">
+        <img src="assert/images/col1-1.webp" alt="Rosa Large">
+        <div class="vp-overlay"><span>View Product</span></div>
+      </div>
+      <div class="vp-info">
+        <p class="vp-name">ROSA — Large Planter</p>
+        <p class="vp-sub">Pack of 2</p>
+        <div class="vp-price"><span class="vp-new">₹5,938</span><span class="vp-old">₹6,598</span></div>
+        <button class="vp-cart" onclick="addToCart('ROSA LARGE')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="vp-card" data-cat="small">
+      <div class="vp-img-wrap">
+        <img src="assert/images/col1-2.jpg" alt="Stella Small">
+        <div class="vp-overlay"><span>View Product</span></div>
+      </div>
+      <div class="vp-info">
+        <p class="vp-name">STELLA — Small Planter</p>
+        <p class="vp-sub">Pack of 2</p>
+        <div class="vp-price"><span class="vp-new">₹3,958</span><span class="vp-old">₹4,308</span></div>
+        <button class="vp-cart" onclick="addToCart('STELLA SMALL')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="vp-card" data-cat="large">
+      <div class="vp-img-wrap">
+        <img src="assert/images/col1-3.webp" alt="Rosa">
+        <div class="vp-overlay"><span>View Product</span></div>
+      </div>
+      <div class="vp-info">
+        <p class="vp-name">ROSA — Large Planter</p>
+        <p class="vp-sub">Pack of 2</p>
+        <div class="vp-price"><span class="vp-new">₹5,938</span><span class="vp-old">₹6,598</span></div>
+        <button class="vp-cart" onclick="addToCart('ROSA')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="vp-card" data-cat="medium">
+      <div class="vp-img-wrap">
+        <img src="assert/images/addtocard1.jpg" alt="Stella Medium">
+        <div class="vp-overlay"><span>View Product</span></div>
+      </div>
+      <div class="vp-info">
+        <p class="vp-name">STELLA — Medium Planter</p>
+        <p class="vp-sub">Single</p>
+        <div class="vp-price"><span class="vp-new">₹5,432</span></div>
+        <button class="vp-cart" onclick="addToCart('STELLA MEDIUM')">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+  <p class="view-empty" id="viewEmpty" style="display:none">No products found in this category.</p>
+</section>
+
+<!-- TOAST -->
+<div class="cart-toast" id="viewToast">
+  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+  <span id="viewToastMsg"></span>
+</div>
+
+<script>
+  // Filter
+  document.querySelectorAll('.vf-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.vf-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      const cards = document.querySelectorAll('.vp-card');
+      let visible = 0;
+      cards.forEach(card => {
+        const show = cat === 'all' || card.dataset.cat === cat;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      document.getElementById('viewEmpty').style.display = visible === 0 ? 'block' : 'none';
+    });
+  });
+
+  // Cart toast
+  function addToCart(name) {
+    const toast = document.getElementById('viewToast');
+    document.getElementById('viewToastMsg').textContent = name + ' added to cart!';
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3000);
+  }
+</script>
+
+<%-include('common/footer')%>

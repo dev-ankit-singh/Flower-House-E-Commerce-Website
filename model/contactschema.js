@@ -16,7 +16,20 @@ const connect = mongoose.Schema({
     message:{
         type:String,
         required:true
+    },
+    ipaddress:{
+        type:String,
+        default: null
+    },
+    status:{
+        type:String,
+        enum:["new", "replied", "read"],
+        default:"new",
     }
-})
+},
+    {
+     timestamps: true
+    
+});
 const contactModel = mongoose.model('usercontact',  connect)
 module.exports=contactModel;

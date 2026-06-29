@@ -23,13 +23,11 @@
 
                                 <div class="form-group">
                                     <label for="firstName">First Name</label>
-                                    <input type="text" class="form-control" name="FirstName"
-                                        value="<%= editData.FirstName %>">
+                                    <input type="text" class="form-control" name="FirstName" value="<%= editData && editData.FirstName %>">
                                 </div>
                                 <div class="form-group">
                                     <label for="lastName">Last Name</label>
-                                    <input type="text" class="form-control" name="LastName"
-                                        value="<%= editData.LastName %>">
+                    <input type="text" class="form-control" name="LastName" value="<%= editData && editData.LastName %>">
                                 </div>
 
                                 <div class="form-group  ">

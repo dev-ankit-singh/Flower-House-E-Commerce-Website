@@ -1,10 +1,9 @@
-
 const mongoose= require('mongoose')
 const bcrypt = require('bcrypt');
 
 
 
-    const userSchema = mongoose.Schema({
+    const registrationSchema =new mongoose.Schema({
         FirstName:{
             type:String,
            
@@ -34,11 +33,26 @@ const bcrypt = require('bcrypt');
             type:String,
             
             required:true
-        }
+        },
         
-    })
+        ipaddress:{
+        type:String,
+        default: null
+    },
+    status:{
+        type:String,
+        enum:["new", "replied", "read"],
+        default:"new",
+    }
+},
+    {
+     timestamps: true
+    
+});
+        
+    
 
-    userSchema.pre("save",function(next){
+    registrationSchema.pre("save",function(next){
         if(!this.isModified("Password")){
             return next();
         }
@@ -48,7 +62,7 @@ const bcrypt = require('bcrypt');
     })
 
 
-    userSchema.methods.comparePassword = function(plaintext, callback){
+    registrationSchema.methods.comparePassword= function(plaintext, callback){
         return callback(null, bcrypt.compareSync(plaintext, this.Password))
     };
 
@@ -57,7 +71,7 @@ const bcrypt = require('bcrypt');
 
 
 
-    const userModel = mongoose.model('user',userSchema)
+    const userModel = mongoose.model('user_registration',registrationSchema)
 
     module.exports=userModel;
 
