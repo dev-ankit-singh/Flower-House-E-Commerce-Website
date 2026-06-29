@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const multer = require("multer");
 const app = express();
 const router = express.Router();
